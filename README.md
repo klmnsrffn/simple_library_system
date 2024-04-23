@@ -65,26 +65,25 @@ Regular users will not have access to administrative features, such as creating 
 
 ## Flowchart
 Welcome Page
-![welcomepage](flowchart.main_eng.png)
+![main_eng](https://github.com/klmnsrffn/simple_library_system/assets/165617982/aa9effec-d927-45d6-ab3b-365270e60091)
 
 Database
-![database](flowchart,database_eng.png)
+![database_eng](https://github.com/klmnsrffn/simple_library_system/assets/165617982/8d57d2c3-3f2b-4041-9d2e-e8a6fa6d5566)
 
 Sign in
-![signin](flowchart.login_eng.png)
+![login_eng](https://github.com/klmnsrffn/simple_library_system/assets/165617982/4316c991-e66b-4764-bd32-69b99342207d)
 
 Homepage Admin
-![homepageadmin](flowchart.homepage_eng.png)
+![homepage_eng](https://github.com/klmnsrffn/simple_library_system/assets/165617982/98e820c1-1bb2-4896-9c90-94a8d5a9f61f)
 
 Manage Accounts
-![manageaccounts](flowchart.account_eng.png)
+![account_eng](https://github.com/klmnsrffn/simple_library_system/assets/165617982/1773722f-4839-4e40-9bcb-0e0c045c5498)
 
 Manage Books
-![managebooks](flowchart.book_eng.png)
+![book_eng](https://github.com/klmnsrffn/simple_library_system/assets/165617982/944391b3-43c0-4647-95f8-8d1c7ad5497e)
 
 User
-![user](flowchart.user_eng.png)
-
+![user_eng](https://github.com/klmnsrffn/simple_library_system/assets/165617982/db156d94-5748-48ed-bb9f-19bfe490c3c2)
 Users Features
 ![usersfeatures](flowchart.user_book_eng.png)
 
