@@ -104,20 +104,31 @@ def livre_menu():
         print("4. Display book")
         print("5. Quit")
         choix = input("Entre your option (1-5) : ")
-
         if choix == "1":
-            titre = input("Input title : ")
-            author = input("Input author : ")
-
-            while True:
-                quantity_str = input("Input quantity of the book : ")
-                if quantity_str.isdigit() and int(quantity_str) > 0:
-                    quantity = int(quantity_str)
-                    print(f"You has been input quantity : {quantity}")
-                    break
-                else:
-                    print("Please enter a positive integer for the quantity. Please try again.")
-            add_book(titre, author, quantity)
+                while True:
+                    title = input("Enter title : ")
+                    if not title:  # Check if the input is empty
+                        print("Title cannot be empty. Program terminated.")
+                        break  # Exit the loop and terminate the program
+                    author = input("Enter author : ")
+                    if not author:  # Check if the input is empty
+                        print("Author cannot be empty. Program terminated.")
+                        break  # Exit the loop and terminate the program
+                    if ' ' in title:
+                        print("Title cannot contain spaces. Please try again.")
+                    elif ' ' in author:
+                        print("Title cannot contain spaces. Please try again.")
+                    else:
+                        while True:
+                            quantity_str = input("Input quantity of the book : ")
+                            if quantity_str.isdigit() and int(quantity_str) > 0:
+                                quantity = int(quantity_str)
+                                print(f"You has been input quantity : {quantity}")
+                                break
+                            else:
+                                print("Please enter a positive integer for the quantity. Please try again.")
+                        add_book(title, author, quantity)
+                        break
         elif choix == "2":
             borrow_book()          
         elif choix == "3":
