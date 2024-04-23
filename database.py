@@ -1,2 +1,2 @@
-# Dictionnaire pour stocker les utilisateurs
+# Dictionary for the users
 users = {}

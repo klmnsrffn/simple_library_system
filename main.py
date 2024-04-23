@@ -1,17 +1,17 @@
-import connecter
+import login
 
-# Boucle principale
+# Sign in page
 while True:
-    print("\nBienvenue !")
-    print("1. Se connecter")
-    print("2. Quitter")
-    choice = input("Votre choix : ")
+    print("\nHello !")
+    print("1. Sign in")
+    print("2. Quit")
+    choice = input("Input your option : ")
     if choice == "1":
-        username = input("Nom d'utilisateur : ")
-        password = input("Mot de passe : ")
-        connecter.login(username, password)
+        username = input("Enter username : ")
+        password = input("Enter password : ")
+        login.login(username, password)
     elif choice == "2":
-        print("Au revoir !")
+        print("See you !")
         break
     else:
-        print("Choix invalide.")
+        print("Invalid option.")

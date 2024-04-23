@@ -1,21 +1,21 @@
-from administrateur import comptes
-from administrateur import livres
+from administrateur import account
+from administrateur import books
 
 def homepage_menu():
     while True :
-        print("\nBienvenue Admin!")
-        print("\nQue souhaitez-vous faire ?")
-        print("\n1. Gérer les comptes des Utilisateurs")
-        print("\n2. Gérer la Bibliothéque")
-        print("\n3. Se déconnecter")
-        Input = input("\nEntrer votre taché: ")
+        print("\nWelcome, Admin!")
+        print("\nWhat action would you like to take?")
+        print("\n1. Manage user accounts. ")
+        print("\n2. Manage Library.")
+        print("\n3. Sign Out")
+        Input = input("\nEnter your option: ")
         if Input == "1":
-            comptes.admin_menu()
+            account.admin_menu()
         elif Input == "2":
-            livres.livre_menu()
+            books.livre_menu()
         elif Input == "3":
-            print("Déconnexion réussie.")
-            print("Au revoir !")
+            print("Sign out successful")
+            print("See you !")
             break
         else :
-            print("Choix invalide. Veuillez réessayer.")
+            print("Invalid option, please try again.")
