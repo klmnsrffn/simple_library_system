@@ -1,23 +1,23 @@
-##Overview
+## Overview
 This project is a simple library management system. Both administrators and regular users can sign in through the same sign-in page, but they will be directed to different features based on their account type (admin or regular user).
 
-##Administrator Features :
+## Administrator Features :
 -Create accounts for administrators and regular users
 -Delete existing accounts
 -Add new books to the library
 -Utilize the borrow and return book features
 
-##Regular User Features:
+## Regular User Features:
 -Borrow books from the library
 -Return borrowed books
 
-##How it Works?
+## How it Works?
 -Upon accessing the system, users will be prompted to sign in.
 -After successful sign-in, administrators will have access to the administrative features mentioned above, while regular users will only have access to the borrow and return book features.
 -Administrators can manage accounts, add new books to the library, and handle book borrowing and returning operations.
 -Regular users can browse the available books and borrow or return them as needed.
 
-##Admin Features
+## Admin Features
 After signing in, administrators will be prompted to choose between managing accounts or managing books in the library.
 Manage Accounts
 1. Create Account
@@ -38,11 +38,11 @@ Administrators can borrow and return books, just like regular users.
 3. Display Book List
 Administrators can display a list of all books available in the library.
 
-*Validation and Error Handling
+* Validation and Error Handling
 -Appropriate validation checks are in place to ensure that required fields are not left blank or filled with invalid data.
 -Error messages will be displayed to guide users in case of any invalid input or operations.
 
-*Database Integration
+* Database Integration
 All account and book data is securely stored and retrieved from a database, ensuring data persistence and integrity.
 
 
@@ -63,7 +63,7 @@ After signing in, regular users will have access to the following features:
 *Limitations
 Regular users will not have access to administrative features, such as creating or deleting accounts, adding new books, or managing other user accounts. These features are reserved for administrators to maintain the integrity and security of the library management system.
 
-##Flowchart
+## Flowchart
 Welcome Page
 ![welcomepage](flowchart.main_eng.png)
 
