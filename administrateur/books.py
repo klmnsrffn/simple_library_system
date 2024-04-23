@@ -34,40 +34,25 @@ def add_book(titre, author, quantity=1):
         books[titre] = {"author": author, "quantity": quantity, "loans": 0}
     print(f"The book '{titre}' has been added to the library.")
 
-# Fonction pour emprunter un livre
 def borrow_book():
     display_book()
-
-def borrow_book():
-    books.display_book()
-    index = int(input("Enter the index of the book to borrow : "))
+    try:
+        index = int(input("Enter the index of the book to borrow : "))
+    except ValueError:
+        print("Invalid input. Please enter a number.")
+        return  # Return to the previous menu
     find_book = False
     for titre, info in books.items():
         if info["quantity"] - info["loans"] > 0:
             if index == 1:
                 if books[titre]["quantity"] > books[titre]["loans"]:
                     books[titre]["loans"] += 1
-                    print(f"Vous avez emprunté le livre '{titre}'.")
+                    print(f"You have borrowed '{titre}'.")
                     find_book = True
                     break
             index -= 1
     if not find_book:
         print(f"The book with index {index + 1} is not available or all copies are already borrowed.")
-
-        
-# Borrow book
-def borrow_book():
-    display_book()
-    index = int(input("Enter the index of the book to borrow. : "))
-    for i, (titre, info) in enumerate(books.items(), start=1):
-        if info["quantity"] - info["loans"] > 0:
-            if index == i:
-                if books[titre]["quantity"] > books[titre]["loans"]:
-                    books[titre]["loans"] += 1
-                    print(f"You borrowed the book '{titre}'.")
-                    break
-    else:
-        print(f"The book with index {index} is not available or all copies are already borrowed.")
 
 # Return book
 def return_book():
@@ -114,10 +99,6 @@ def livre_menu():
                     if not author:  # Check if the input is empty
                         print("Author cannot be empty. Program terminated.")
                         break  # Exit the loop and terminate the program
-                    if ' ' in title:
-                        print("Title cannot contain spaces. Please try again.")
-                    elif ' ' in author:
-                        print("Title cannot contain spaces. Please try again.")
                     else:
                         while True:
                             quantity_str = input("Input quantity of the book : ")

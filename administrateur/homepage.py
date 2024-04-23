@@ -3,7 +3,6 @@ from administrateur import books
 
 def homepage_menu():
     while True :
-        print("\nWelcome, Admin!")
         print("\nWhat action would you like to take?")
         print("\n1. Manage user accounts. ")
         print("\n2. Manage Library.")
